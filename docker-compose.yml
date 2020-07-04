@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+  webapp:        
+    image: nginx
+    container_name: angular-demo
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    ports:
+      - "80:80"
